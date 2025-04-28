@@ -1,0 +1,28 @@
+{
+  "name": "@jjfather/civil-code-of-china-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && chmod 755 build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "civil_code_of_China_mcp": "./build/index.js"
+  },
+  "keywords": ["民法典", "MCP", "法律"],
+  "author": "jellycloud",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}
